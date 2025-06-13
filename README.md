@@ -105,19 +105,6 @@ EXPOSE 8080
 CMD ["gunicorn", "--bind", "0.0.0.0:8080", "main:app"]
 ```
 
-## ☁️ Deploy ke Google Cloud Run
-
-1. **Tag dan Push ke Artifact Registry**:
-
-   ```bash
-   docker tag indobert-api asia-docker.pkg.dev/PROJECT_ID/REPO_NAME/indobert-api
-   docker push asia-docker.pkg.dev/PROJECT_ID/REPO_NAME/indobert-api
-   ```
-
-2. **Deploy ke Cloud Run**:
-
-- Gunakan platform google cloud run untuk mendeploy
-
 ## ✅ Tips Produksi
 
 - Gunakan `gunicorn`, bukan `flask run`
