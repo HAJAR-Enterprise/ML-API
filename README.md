@@ -104,8 +104,3 @@ COPY app/ .
 EXPOSE 8080
 CMD ["gunicorn", "--bind", "0.0.0.0:8080", "main:app"]
 ```
-
-## ✅ Tips Produksi
-
-- Gunakan `gunicorn`, bukan `flask run`
-- Unduh model saat build image, bukan saat runtime
