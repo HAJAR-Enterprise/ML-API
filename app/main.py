@@ -12,7 +12,7 @@ from utils import (
     load_slang_dictionary
 )
 
-MODEL_NAME = "fhru/indobert-judi-online-2"
+MODEL_NAME = "fhru/indobert-finetuned-judi"
 CACHE_DIR = "/root/.cache/huggingface"
 
 app = Flask(__name__)
