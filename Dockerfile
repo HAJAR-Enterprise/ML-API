@@ -9,8 +9,8 @@ RUN pip install --no-cache-dir --upgrade pip \
 
 # PRE-DOWNLOAD IndoBERT
 RUN python -c "from transformers import AutoTokenizer, TFAutoModelForSequenceClassification; \
-               AutoTokenizer.from_pretrained('fhru/indobert-judi-online-2'); \
-               TFAutoModelForSequenceClassification.from_pretrained('fhru/indobert-judi-online-2')"
+               AutoTokenizer.from_pretrained('fhru/indobert-finetuned-judi'); \
+               TFAutoModelForSequenceClassification.from_pretrained('fhru/indobert-finetuned-judi')"
 
 COPY app/ .
 
