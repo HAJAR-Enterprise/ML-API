@@ -1,4 +1,4 @@
-# IndoBERT Judi Online Classifier API
+# IndoBERT Judi Online API Untuk HAJAR
 
 API berbasis Flask untuk klasifikasi komentar berbahasa Indonesia terkait judi online, menggunakan model IndoBERT yang telah di-fine-tune.
 
@@ -8,12 +8,11 @@ API berbasis Flask untuk klasifikasi komentar berbahasa Indonesia terkait judi o
 - Preprocessing teks bahasa Indonesia
 - REST API sederhana (`/predict`)
 - Mengembalikan label dan confidence score
-- Siap deploy ke Docker & Google Cloud Run
 
 ## 🧠 Model
 
 - **Model**: fhru/indobert-judi-online-2
-- **Framework**: TensorFlow 2 + HuggingFace Transformers
+- **Framework**: TensorFlow + HuggingFace Transformers
 - **Arsitektur**: IndoBERT (BERT pretrained untuk Bahasa Indonesia)
 
 ## 📁 Struktur Proyek
@@ -34,8 +33,8 @@ API berbasis Flask untuk klasifikasi komentar berbahasa Indonesia terkait judi o
 1. **Clone repository**:
 
    ```bash
-   git clone https://github.com/username/indobert-judi-api.git
-   cd indobert-judi-api
+   git clone https://github.com/HAJAR-Enterprise/ML-API.git
+   cd ML_API
    ```
 
 2. **Build Docker image**:
