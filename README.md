@@ -116,15 +116,8 @@ CMD ["gunicorn", "--bind", "0.0.0.0:8080", "main:app"]
    ```
 
 2. **Deploy ke Cloud Run**:
-   ```bash
-   gcloud run deploy indobert-api \
-     --image asia-docker.pkg.dev/PROJECT_ID/REPO_NAME/indobert-api \
-     --platform managed \
-     --region asia-southeast2 \
-     --memory 2Gi \
-     --timeout 300 \
-     --allow-unauthenticated
-   ```
+
+- Gunakan platform google cloud run untuk mendeploy
 
 ## ✅ Tips Produksi
 
